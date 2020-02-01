@@ -801,8 +801,8 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
 	  logRt = log((R*( 816.00 / (float)p_event->data.done.p_buffer[i] - 1.00 )));
           logRt = (logRt+logRt+logRt+logRt+logRt)/5.0 ;
           T = ( 1.0 / (A + B*logRt + C*logRt*logRt*logRt ) );
-          Tc = T -  273.15; // Convert Kelvin to Celsius 273.15  - 270.15
-          Tc = Tc + 11;
+          Tc = T -  273.15; // Convert Kelvin to Celsius 273.15 
+          Tc = Tc + 11;  // calibrate according to your thermistor
           NRF_LOG_INFO("Rt:" NRF_LOG_FLOAT_MARKER "\r\n", NRF_LOG_FLOAT(Rt));
           NRF_LOG_INFO("Tc:" NRF_LOG_FLOAT_MARKER "\r\n", NRF_LOG_FLOAT(Tc));
         
