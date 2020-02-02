@@ -46,5 +46,10 @@ Search and add the following files
 
 4.nrfx_saadc.c
 
+The circuit diagram is attached(thermistor-circuit.webp) in which 
 
-                   
+Vs ==> Vdd (in nRF52840)
+
+Vo ==> Pin No:0.02(in nRF52840)
+
+GND ==> GND(in nRF52840)                   
