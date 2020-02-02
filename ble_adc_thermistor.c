@@ -781,18 +781,7 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
 
         for (i = 0; i < SAMPLES_IN_BUFFER; i++)
         {
-          /*
-          val = p_event->data.done.p_buffer[i];
-          Rt = R*( 853.0 / (float)val - 1.0 );
-          logRt = log(R*( 853.0 / (float)val - 1.0 ));
-          T = ( 1.0 / (A + B*logRt + C*logRt*logRt*logRt ) );
-          Tc = T - 273.15;                     // Convert Kelvin to Celsius 273.15
-          //NRF_LOG_INFO("Rt:" NRF_LOG_FLOAT_MARKER "\r\n", NRF_LOG_FLOAT(Rt));
-          //NRF_LOG_INFO("logRt:" NRF_LOG_FLOAT_MARKER "\r\n", NRF_LOG_FLOAT(logRt));
-          NRF_LOG_INFO("TinC:" NRF_LOG_FLOAT_MARKER "\r\n", NRF_LOG_FLOAT(Tc));
-          printf("\nval:%d",val);
-          printf("\ntemp:%d",Tc);
-          */
+         
         
           Rt = R*( 816.00 / (float)p_event->data.done.p_buffer[i] - 1.00 );
 
