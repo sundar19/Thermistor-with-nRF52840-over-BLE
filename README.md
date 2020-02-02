@@ -8,7 +8,7 @@ The following instructions are written for Segger Embedded Studio download here 
 3. Change the main.c file to the attached file.
 
 ## Merging BLE with ADC
-go to sdk_config.h and search 
+Go to sdk_config.h and search 
 
 1. nrf_drv_timer   TIMER_ENABLED 1 (enable the timer by replacing 0 to 1),
                    TIMER3_ENABLED 1 (We have enabled timer instance 3 in our main.c)
@@ -29,9 +29,11 @@ go to sdk_config.h and search
 
 6. nrfx_saadc      NRFX_SAADC_ENABLED 1
 
+
 Then include the following libraries in your main.c , #include""(already in program)
 
 nrf_drv_saadc.h , nrf_drv_timer.h , nrf_drv_ppi.h , nrfx_ppi.h , nrfx_timer.h , nrfx_saadc.h
+
 
 In your nRF_Drivers (A tab in your left)
 Search and add the following files 
