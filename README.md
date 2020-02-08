@@ -1,6 +1,8 @@
 # Thermistor-with-nRF52840-over-BLE
 Getting temperature value from thermistor thru ADC and sending to App over BLE
 
+Use Nordic ToolBox UART to recieve values(available in Play Store)
+
 ## General instructions
 The following instructions are written for Segger Embedded Studio download here https://www.segger.com/downloads/embedded-studio/
 1. Go to the following website http://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v15.x.x/ and download v15.2.0 
